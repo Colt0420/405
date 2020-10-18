@@ -4,33 +4,10 @@ import "./App.css"
 import TextField from "@material-ui/core/TextField"
 import { makeStyles } from "@material-ui/core/styles"
 import Button from "@material-ui/core/Button"
-import grey from "@material-ui/core/colors/grey"
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "25ch",
-      background: "white",
-    },
-  },
-  textField: {
-    color: "black",
-  },
-}))
 
 function App() {
-  const classes = useStyles()
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
-
-  // const updateName = (input) => {
-  //   setName(input.text)
-  // }
-
-  // const updateEmail = (input) => {
-  //   setEmail(input.text)
-  // }
 
   const clear = () => {
     setName("")
